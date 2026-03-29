@@ -9,21 +9,21 @@ body {
   min-height: 100svh;
 }
 
-/* carrusel */
-@keyframes scrollLeft {
-  from {
-    transform: translateX(0);
-  }
-  to {
+/* carruseles */
+@keyframes scrollProjects {
+  0% {
     transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
-@keyframes scrollRight {
-  from {
-    transform: translateX(0);
+@keyframes scrollLenguages {
+  0% {
+    transform: translateX(0%);
   }
-  to {
-    transform: translateX(50%);
+  100% {
+    transform: translateX(-50%);
   }
 }
