@@ -1,126 +1,126 @@
 export const frontend = [
   {
-    nombre: "HTML",
+    nombre: 'HTML',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
   },
   {
-    nombre: "CSS",
+    nombre: 'CSS',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   },
   {
-    nombre: "JavaScript",
+    nombre: 'JavaScript',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   },
   {
-    nombre: "React",
+    nombre: 'React',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
   },
   {
-    nombre: "Vue.js",
+    nombre: 'Vue.js',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
   },
   {
-    nombre: "Bootstrap",
+    nombre: 'Bootstrap',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
   },
   {
-    nombre: "Tailwind",
+    nombre: 'Tailwind',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
   },
   {
-    nombre: "Vite",
+    nombre: 'Vite',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg',
   },
   {
-    nombre: "Swiper.js",
+    nombre: 'Swiper.js',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   },
   {
-    nombre: "GSAP",
+    nombre: 'GSAP',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   },
 ];
 
 export const backend = [
   {
-    nombre: "Node.js",
+    nombre: 'Node.js',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
   },
   {
-    nombre: "PHP",
+    nombre: 'PHP',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
   },
   {
-    nombre: "Laravel",
+    nombre: 'Laravel',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg',
   },
   {
-    nombre: "MySQL",
+    nombre: 'MySQL',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
   },
   {
-    nombre: "PostgreSQL",
+    nombre: 'PostgreSQL',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
   },
 ];
 
 export const tools = [
   {
-    nombre: "Git",
+    nombre: 'Git',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
   },
   {
-    nombre: "GitHub",
+    nombre: 'GitHub',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
   },
   {
-    nombre: "Vercel",
+    nombre: 'Vercel',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg',
   },
   {
-    nombre: "Netlify",
+    nombre: 'Netlify',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg',
   },
   {
-    nombre: "Linux",
+    nombre: 'Linux',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
   },
   {
-    nombre: "Hostinger",
-    icono: "https://cdn.simpleicons.org/hostinger/673DE6",
+    nombre: 'Hostinger',
+    icono: 'https://cdn.simpleicons.org/hostinger/673DE6',
   },
   {
-    nombre: "Google Maps API",
+    nombre: 'Google Maps API',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlemaps/googlemaps-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlemaps/googlemaps-original.svg',
   },
   {
-    nombre: "Shopify",
-    icono: "https://cdn.simpleicons.org/shopify/7AB55C",
+    nombre: 'Shopify',
+    icono: 'https://cdn.simpleicons.org/shopify/7AB55C',
   },
   {
-    nombre: "VS Code",
+    nombre: 'VS Code',
     icono:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
   },
 ];
