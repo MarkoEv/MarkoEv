@@ -1,38 +1,27 @@
+import javascript from './images/lenguajes/javascript.png';
+import react from './images/lenguajes/react.png';
+import nodejs from './images/lenguajes/nodejs.png';
+import php from './images/lenguajes/php-logo.png';
+import mysql from './images/lenguajes/mysql-logo.png';
+import postgresql from './images/lenguajes/postgresql.png';
+import css3 from './images/lenguajes/css3.png';
+import html from './images/lenguajes/html.png';
+import tailwind from './images/lenguajes/tailwind_css.png';
+import bootstrap from './images/lenguajes/bootstrap.png';
+import github from './images/lenguajes/github.png';
+import laravel from './images/lenguajes/laravel-white.png';
+
 export const lenguajes = [
-  {
-    icono: 'src/assets/images/lenguajes/javascript.png',
-  },
-  {
-    icono: 'src/assets/images/lenguajes/react.png',
-  },
-  {
-    icono: 'src/assets/images/lenguajes/nodejs.png',
-  },
-  {
-    icono: 'src/assets/images/lenguajes/php-logo.png',
-  },
-  {
-    icono: 'src/assets/images/lenguajes/mysql-logo.png',
-  },
-  {
-    icono: 'src/assets/images/lenguajes/postgresql.png',
-  },
-  {
-    icono: 'src/assets/images/lenguajes/css3.png',
-  },
-  {
-    icono: 'src/assets/images/lenguajes/html.png',
-  },
-  {
-    icono: 'src/assets/images/lenguajes/tailwind_css.png',
-  },
-  {
-    icono: 'src/assets/images/lenguajes/bootstrap.png',
-  },
-  {
-    icono: 'src/assets/images/lenguajes/github.png',
-  },
-  {
-    icono: 'src/assets/images/lenguajes/laravel-white.png',
-  },
+  { icono: javascript },
+  { icono: react },
+  { icono: nodejs },
+  { icono: php },
+  { icono: mysql },
+  { icono: postgresql },
+  { icono: css3 },
+  { icono: html },
+  { icono: tailwind },
+  { icono: bootstrap },
+  { icono: github },
+  { icono: laravel },
 ];
