@@ -5,11 +5,13 @@ import { useRef, useState, useEffect } from 'react';
 function CarouselProjects({ proyectos }) {
   const scrollRef = useRef();
   const [progress, setProgress] = useState(0);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollStart = useRef(0);
 
   const scroll = (direction) => {
     const container = scrollRef.current;
     const scrollAmount = container.offsetWidth * 0.8;
-
     container.scrollBy({
       left: direction === 'left' ? -scrollAmount : scrollAmount,
       behavior: 'smooth',
@@ -20,17 +22,48 @@ function CarouselProjects({ proyectos }) {
     const container = scrollRef.current;
     const maxScroll = container.scrollWidth - container.clientWidth;
     const current = container.scrollLeft;
-
-    const percentage = (current / maxScroll) * 100;
-    setProgress(percentage || 0);
+    setProgress((current / maxScroll) * 100 || 0);
   };
 
   useEffect(() => {
     const container = scrollRef.current;
     container.addEventListener('scroll', handleScroll);
-
     return () => container.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // mouse drag
+  const onMouseDown = (e) => {
+    isDragging.current = true;
+    startX.current = e.pageX - scrollRef.current.offsetLeft;
+    scrollStart.current = scrollRef.current.scrollLeft;
+    scrollRef.current.style.cursor = 'grabbing';
+  };
+
+  const onMouseUp = () => {
+    isDragging.current = false;
+    scrollRef.current.style.cursor = 'grab';
+  };
+
+  const onMouseMove = (e) => {
+    if (!isDragging.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX.current) * 2;
+    scrollRef.current.scrollLeft = scrollStart.current - walk;
+  };
+
+  // touch drag
+  const onTouchStart = (e) => {
+    startX.current = e.touches[0].pageX - scrollRef.current.offsetLeft;
+    scrollStart.current = scrollRef.current.scrollLeft;
+  };
+
+  const onTouchMove = (e) => {
+    const x = e.touches[0].pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX.current) * 2;
+    scrollRef.current.scrollLeft = scrollStart.current - walk;
+  };
+
   return (
     <div className="mt-5">
       <div className="relative">
@@ -43,18 +76,24 @@ function CarouselProjects({ proyectos }) {
         </button>
         <div
           ref={scrollRef}
-          className="flex gap-4 scroll-smooth snap-x snap-mandatory overflow-hidden"
+          className="flex gap-4 scroll-smooth snap-x snap-mandatory overflow-hidden cursor-grab"
+          onMouseDown={onMouseDown}
+          onMouseUp={onMouseUp}
+          onMouseLeave={onMouseUp}
+          onMouseMove={onMouseMove}
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
         >
           {proyectos.map((proyecto) => (
             <article
               key={proyecto.id}
-              className="group snap-start relative rounded-2x bg-black transition-all duration-300 overflow-hidden shrink-0 w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-90"
+              className="group snap-start relative rounded-2xl bg-black transition-all duration-300 overflow-hidden shrink-0 w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-90"
             >
               <div className="h-48 sm:h-52 lg:h-58 rounded-t-2xl overflow-hidden">
                 <img
                   src={proyecto.imagen}
                   alt={`Proyecto ${proyecto.nombre}`}
-                  className="w-full h-full object-cover "
+                  className="w-full h-full object-cover"
                   loading="lazy"
                 />
               </div>
@@ -104,6 +143,7 @@ function CarouselProjects({ proyectos }) {
                       href={proyecto.live}
                       target="_blank"
                       rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
                       className="text-xs lg:text-sm px-3 lg:px-4 flex py-2 items-center gap-2 rounded-lg hover:bg-white/10 transition"
                     >
                       <TbWorld />
@@ -115,6 +155,7 @@ function CarouselProjects({ proyectos }) {
                       href={proyecto.github}
                       target="_blank"
                       rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
                       className="text-xs lg:text-sm px-3 lg:px-4 flex py-2 items-center gap-2 rounded-lg hover:bg-white/10 transition"
                     >
                       <FaGithub />
@@ -136,17 +177,15 @@ function CarouselProjects({ proyectos }) {
         </button>
       </div>
       <div className="flex justify-center mt-6">
-        <div className="relative w-52 h-2 bg-white/10 rounded-full overflow-hidden group">
+        <div className="relative w-52 h-2 bg-white/10 rounded-full overflow-hidden">
           <div
             className="absolute top-0 left-0 h-full bg-linear-to-r from-green-400 to-blue-500 transition-all duration-300"
             style={{ width: `${progress}%` }}
           />
-
           <div
             onClick={() => scroll('left')}
             className="absolute left-0 top-0 h-full w-1/2 cursor-pointer z-10"
           />
-
           <div
             onClick={() => scroll('right')}
             className="absolute right-0 top-0 h-full w-1/2 cursor-pointer z-10"
