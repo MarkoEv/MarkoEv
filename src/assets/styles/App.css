@@ -19,11 +19,21 @@ body {
   }
 }
 
-@keyframes scrollLenguages {
-  0% {
-    transform: translateX(0%);
+/* carruseles */
+@keyframes scrollLenguagesLeft {
+  from {
+    transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollLenguagesRigth {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
   }
 }

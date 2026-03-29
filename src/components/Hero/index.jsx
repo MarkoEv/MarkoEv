@@ -104,8 +104,15 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="mt-10 sm:px-12 opacity-90 grid">
-          <CarouselLenguages items={lenguajes} />
+        <div className="mt-10 sm:px-12 opacity-90 grid gap-5">
+          <CarouselLenguages
+            items={lenguajes}
+            direction={'scrollLenguagesRigth'}
+          />
+          <CarouselLenguages
+            items={lenguajes}
+            direction={'scrollLenguagesLeft'}
+          />
         </div>
       </div>
     </section>

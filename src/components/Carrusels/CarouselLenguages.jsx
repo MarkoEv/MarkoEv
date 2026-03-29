@@ -1,12 +1,12 @@
 import React from 'react';
 
-function CarouselLenguages({ items }) {
+function CarouselLenguages({ items, direction }) {
   return (
-    <div className="w-full overflow-hidden relative">
+    <div className="w-full overflow-hidden relative opacity-60">
       <div
         className="flex w-max hover:[animation-play-state:paused]"
         style={{
-          animation: `scrollLenguages ${items.length * 5}s linear infinite`,
+          animation: `${direction} ${items.length * 5}s linear infinite`,
         }}
       >
         {[...items, ...items].map((item, i) => (
@@ -23,8 +23,8 @@ function CarouselLenguages({ items }) {
           </div>
         ))}
       </div>
-      <div className="pointer-events-none absolute left-0 top-0 h-full  w-10 bg-linear-to-r from-black to-transparent"></div>
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-10 bg-linear-to-l from-black to-transparent"></div>
+      <div className="pointer-events-none absolute left-0 top-0 h-full  w-30 bg-linear-to-r from-black to-transparent"></div>
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-30 bg-linear-to-l from-black to-transparent"></div>
     </div>
   );
 }
