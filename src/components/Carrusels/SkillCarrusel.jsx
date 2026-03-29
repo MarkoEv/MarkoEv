@@ -1,13 +1,13 @@
 import React from 'react';
-import { CarruselRigth } from './CarruselRigth';
-import { CarruselLeft } from './CarruselLeft';
+import { CarouselLenguages } from './CarouselLenguages';
+import { CarouselProjects } from './CarouselProjects';
 import { lenguajes } from '../../data/carousel';
 
 function SkillsCarrusel() {
   return (
     <>
-      <CarruselLeft items={lenguajes} />
-      <CarruselRigth items={lenguajes} />
+      {/* <CarouselProjects items={lenguajes} /> */}
+      <CarouselLenguages items={lenguajes} />
     </>
   );
 }
