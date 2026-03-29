@@ -2,7 +2,8 @@ import React from 'react';
 import { FaLinkedin, FaGithubSquare, FaFacebook } from 'react-icons/fa';
 import { HiOutlineDownload } from 'react-icons/hi';
 import { SiPlatzi } from 'react-icons/si';
-import { SkillsCarrusel } from '../Carrusels/SkillCarrusel';
+import { CarouselLenguages } from '../Carrusels/CarouselLenguages';
+import { lenguajes } from '../../data/carousel';
 import heroBg from '../../assets/images/photos/hero.png';
 
 function Hero() {
@@ -104,7 +105,7 @@ function Hero() {
           </div>
         </div>
         <div className="mt-10 sm:px-12 opacity-90 grid">
-          <SkillsCarrusel />
+          <CarouselLenguages items={lenguajes} />
         </div>
       </div>
     </section>
