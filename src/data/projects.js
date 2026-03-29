@@ -58,7 +58,7 @@ export const proyectos = [
     imagen: tasksmanager,
     github: 'https://github.com/MarkoEv/tasksmanager',
     category: 'Hobby',
-    live: 'https://tasksmanager.vercel.app',
+    live: 'https://tasksmanager-kappa.vercel.app/',
   },
 
   {
@@ -71,6 +71,6 @@ export const proyectos = [
     github:
       'https://github.com/MarkoEv/Simulador-de-Automatas-Finitos-Deterministas-AFD',
     category: 'Hobby',
-    live: '',
+    live: 'https://automatafinito.netlify.app/',
   },
 ];
