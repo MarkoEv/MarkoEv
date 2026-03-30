@@ -1,4 +1,5 @@
 import { Blogs } from './components/Blogs';
+import { Certificates } from './components/Certificates';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Projects />
       <Skills />
+      <Certificates />
     </>
   );
 }
