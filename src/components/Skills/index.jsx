@@ -12,9 +12,9 @@ function Skills() {
               Habilidades
             </span>
           </h2>
-          <p className="text-lg font-semibold text-white">Skills Fullstack</p>
+          <p className=" text-lg font-semibold text-white">Skills Fullstack</p>
         </header>
-        <div className="w-full">
+        <div className="mt-4 w-full">
           <div className="flex justify-center">
             <GridSkills />
           </div>
