@@ -19,7 +19,7 @@ export const proyectos = [
   },
   {
     id: 2,
-    nombre: 'Slav Digital',
+    nombre: 'Slav',
     descripcion:
       'Rastreador de vehiculos, rutas y administrar los vehiculos en tiempo real',
     stack: ['Laravel', 'MySQL', 'PHP'],
@@ -70,7 +70,7 @@ export const proyectos = [
     imagen: dfa,
     github:
       'https://github.com/MarkoEv/Simulador-de-Automatas-Finitos-Deterministas-AFD',
-    category: 'Hobby',
+    category: 'Escolar',
     live: 'https://automatafinito.netlify.app/',
   },
 ];

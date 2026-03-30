@@ -65,7 +65,7 @@ function CarouselProjects({ proyectos }) {
   };
 
   return (
-    <div className="mt-5">
+    <div className="mt-5 text-center ">
       <div className="relative">
         <button
           onClick={() => scroll('left')}
@@ -87,7 +87,7 @@ function CarouselProjects({ proyectos }) {
           {proyectos.map((proyecto) => (
             <article
               key={proyecto.id}
-              className="group snap-start relative rounded-2xl bg-black transition-all duration-300 overflow-hidden shrink-0 w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-90"
+              className="group snap-center relative rounded-2xl bg-black transition-all duration-300 overflow-hidden shrink-0 w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-90"
             >
               <div className="h-48 sm:h-52 lg:h-58 rounded-t-2xl overflow-hidden">
                 <img
@@ -126,7 +126,7 @@ function CarouselProjects({ proyectos }) {
                   {proyecto.descripcion}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mt-3">
+                <div className="flex flex-wrap gap-2 mt-3 justify-center">
                   {proyecto.stack.map((tech, index) => (
                     <span
                       key={index}
@@ -137,7 +137,7 @@ function CarouselProjects({ proyectos }) {
                   ))}
                 </div>
 
-                <div className="flex gap-3 mt-3">
+                <div className="flex gap-3 mt-3 justify-center">
                   {proyecto.live && (
                     <a
                       href={proyecto.live}
@@ -147,7 +147,7 @@ function CarouselProjects({ proyectos }) {
                       className="text-xs lg:text-sm px-3 lg:px-4 flex py-2 items-center gap-2 rounded-lg hover:bg-white/10 transition"
                     >
                       <TbWorld />
-                      Página
+                      Visitar
                     </a>
                   )}
                   {proyecto.github.length > 0 && (
@@ -159,7 +159,7 @@ function CarouselProjects({ proyectos }) {
                       className="text-xs lg:text-sm px-3 lg:px-4 flex py-2 items-center gap-2 rounded-lg hover:bg-white/10 transition"
                     >
                       <FaGithub />
-                      GitHub
+                      Código
                     </a>
                   )}
                 </div>
@@ -177,7 +177,7 @@ function CarouselProjects({ proyectos }) {
         </button>
       </div>
       <div className="flex justify-center mt-6">
-        <div className="relative w-52 h-2 bg-white/10 rounded-full overflow-hidden">
+        <div className="relative w-52 h-2 bg-white/70 rounded-full overflow-hidden">
           <div
             className="absolute top-0 left-0 h-full bg-linear-to-r from-green-400 to-blue-500 transition-all duration-300"
             style={{ width: `${progress}%` }}
