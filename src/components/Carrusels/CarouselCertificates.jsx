@@ -93,27 +93,13 @@ function CarouselCertificates({ certificates }) {
                   src={certificate.imagen}
                   alt={`certificate ${certificate.nombre}`}
                   className="w-full h-full object-cover"
+                  draggable="false"
                   loading="lazy"
                 />
               </div>
 
               <div className="p-4 lg:p-5 rounded-2xl">
                 <h3 className="font-semibold text-sm lg:text-base">
-                  {certificate.nombre}
-                </h3>
-              </div>
-
-              <div
-                className="
-                  px-4 pb-4
-                  lg:absolute lg:bottom-0 lg:left-0 lg:right-0
-                  lg:bg-black/90 lg:rounded-2xl lg:p-5
-                  lg:translate-y-full lg:opacity-0
-                  lg:group-hover:translate-y-0 lg:group-hover:opacity-100
-                  lg:transition-all lg:duration-500
-                "
-              >
-                <h3 className="hidden lg:block font-semibold text-base mb-2">
                   {certificate.nombre}
                 </h3>
               </div>

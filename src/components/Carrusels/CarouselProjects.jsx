@@ -95,6 +95,7 @@ function CarouselProjects({ proyectos }) {
                   alt={`Proyecto ${proyecto.nombre}`}
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  draggable="false"
                 />
               </div>
 
