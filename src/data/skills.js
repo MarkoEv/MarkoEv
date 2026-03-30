@@ -66,7 +66,7 @@ export const skills = [
   {
     id: 10,
     nombre: 'Bootstrap',
-    descripcion: 'CSS componentes',
+    descripcion: 'CSS utilidades',
     icono:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
   },
