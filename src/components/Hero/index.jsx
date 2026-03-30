@@ -3,8 +3,7 @@ import { FaLinkedin, FaGithubSquare, FaFacebook } from 'react-icons/fa';
 import { HiOutlineDownload } from 'react-icons/hi';
 import { SiPlatzi } from 'react-icons/si';
 import { CarouselLenguages } from '../Carrusels/CarouselLenguages';
-import { lenguajes } from '../../data/carousel';
-import heroBg from '../../assets/images/photos/hero.png';
+import { lenguajes } from '../../data/lenguages';
 
 function Hero() {
   const redes = [
@@ -42,27 +41,35 @@ function Hero() {
       <div className="px-4 sm:px-12 lg:px-36 py-6 ">
         <div className="relative p-6 sm:p-10">
           <div
-            className="absolute inset-0 bg-cover bg-center rounded-xl"
-            style={{ backgroundImage: `url(${heroBg})` }}
+            className="
+            absolute inset-0 bg-cover bg-center rounded-xl
+            lg:bg-[url('../../assets/images/photos/herolg.jpg')]
+            md:bg-[url('../../assets/images/photos/heromd.jpg')]
+            sm:bg-[url('../../assets/images/photos/herosm.jpg')]
+            bg-[url('../../assets/images/photos/heromobile.jpg')]
+            "
           ></div>
 
           <div className="relative z-10 max-w-lg text-white ">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight ">
               <span className="text-green-400">Marco Antonio </span>
               <span className="block">Evangelista Armenta</span>
             </h1>
-            <p className="mt-4 text-lg font-semibold sm:text-base">
+            <p className="mt-4 text-lg font-semibold sm:text-base text-center sm:text-start">
               Ingeniero en Sistemas y Desarrollador Web
             </p>
-            <p className="text-sm sm:text-base text-gray-300">
+            <p className="text-sm sm:text-base text-gray-300 text-center sm:text-start">
               Especializado en desarrollo web, con amplio conocimiento en
               tecnologías modernas. Interesado en la docencia para ayudar a
               quienes buscan cambiar el mundo a través de la tecnología.
             </p>
-            <p className="mt-2 text-sm " aria-label="Contacto de marco">
+            <p
+              className="mt-2 text-sm text-center sm:text-start"
+              aria-label="Contacto de marco"
+            >
               <a
                 href="mailto::armentamarcoantonioev@gmail.com"
-                className="hover:underline text-green-400 font-semibold"
+                className="hover:underline text-green-400 font-semibold "
                 aria-label="Contactar a marco"
               >
                 armentamarcoantonioev@gmail.com
@@ -70,7 +77,7 @@ function Hero() {
             </p>
             <nav
               aria-label="Redes sociales"
-              className="mt-10 flex gap-4 overflow-visible"
+              className="mt-10 flex gap-4 overflow-visible justify-center sm:justify-start"
             >
               {redes.map(({ id, name, icon, href }) => (
                 <a
@@ -80,7 +87,7 @@ function Hero() {
                   rel="noreferrer"
                   aria-label={name}
                   title={name}
-                  className="relative group text-3xl hover:scale-125 transition-transform duration-300"
+                  className="relative group  text-3xl hover:scale-125 transition-transform duration-300"
                 >
                   {icon}
                   <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
