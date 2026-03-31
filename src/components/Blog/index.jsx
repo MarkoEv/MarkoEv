@@ -48,7 +48,7 @@ function Blogs() {
             </time>
           </div>
 
-          <div className="w-full">
+          <div className="w-full  rounded-2xl">
             <CarouselBlogs />
           </div>
         </header>

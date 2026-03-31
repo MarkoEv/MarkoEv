@@ -14,12 +14,12 @@ function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#1c1c1c]/80 backdrop-blur-md border-b border-white/10">
       <div className="px-4 sm:px-12 lg:px-46  h-16 flex items-center justify-between">
-        <h1 className="text-lg font-bold">
+        <a href="/" className="text-lg font-bold">
           <span className="text-white">{'[" Marko'}</span>
           <span className="bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
             {'Ev "]'}
           </span>
-        </h1>
+        </a>
 
         <nav className="hidden md:flex items-center gap-8">
           {links.map((link, i) => (
@@ -29,7 +29,7 @@ function Header() {
               className="text-sm text-gray-300 hover:text-white transition relative group "
             >
               {link.name}
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-400 transition-all group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-400 transition-all group-hover:w-full"></span>
             </a>
           ))}
         </nav>

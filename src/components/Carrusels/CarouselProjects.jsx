@@ -32,12 +32,12 @@ function CarouselProjects({ proyectos }) {
         <div
           ref={scrollRef}
           className="
-    flex gap-5 
-    scroll-smooth snap-x snap-mandatory 
-    overflow-hidden 
-    cursor-grab
-    px-1 sm:px-2 lg:px-0
-  "
+          flex gap-5 
+          scroll-smooth snap-x snap-mandatory 
+          overflow-hidden 
+          cursor-grab
+          px-1 sm:px-2 lg:px-0
+        "
           onMouseDown={onMouseDown}
           onMouseUp={onMouseUp}
           onMouseLeave={onMouseUp}

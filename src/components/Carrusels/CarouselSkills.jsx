@@ -38,9 +38,7 @@ function CarouselSkills({ items }) {
           ))}
         </div>
       </div>
-
       <div className="pointer-events-none absolute left-0 top-0 h-full w-12 bg-linear-to-r from-[#1C1C1C] to-transparent"></div>
-
       <div className="pointer-events-none absolute right-0 top-0 h-full w-12 bg-linear-to-l from-[#1C1C1C] to-transparent"></div>
     </div>
   );

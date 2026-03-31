@@ -44,7 +44,7 @@ function Hero() {
           <div
             className="
             border border-gray-700/90 rounded-2xl
-            absolute inset-0 bg-cover bg-center opacity-80
+            absolute inset-0 bg-cover bg-center opacity-60
             lg:bg-[url('../../assets/images/photos/herolg.jpg')]
             md:bg-[url('../../assets/images/photos/heromd.jpg')]
             sm:bg-[url('../../assets/images/photos/herosm.jpg')]
@@ -71,7 +71,7 @@ function Hero() {
             >
               <a
                 href="mailto::armentamarcoantonioev@gmail.com"
-                className="hover:underline bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent font-semibold "
+                className="hover:underline bg-linear-to-r text-green-400 "
                 aria-label="Contactar a marco"
               >
                 armentamarcoantonioev@gmail.com
@@ -105,7 +105,7 @@ function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Descargar CV de Marco"
-                className="flex items-center justify-center gap-2 border text-center border-white  bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent  font-semibold px-4 py-2 rounded-xl"
+                className="flex hover:rotate-x-3 hover:rotate-y-10  hover:text-white transition-all duration-300 items-center justify-center gap-2 border text-center border-white  bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent  font-semibold px-4 py-2 rounded-xl"
               >
                 <HiOutlineDownload className="text-white" />
                 <span>Descargar CV</span>
