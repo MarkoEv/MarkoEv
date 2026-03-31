@@ -35,14 +35,16 @@ function Hero() {
 
   return (
     <section
+      id="Inicio"
       aria-label="Presentación"
-      className="flex justify-center items-center h-screen"
+      className="flex justify-center mt-15 sm:mt-5 lg:mt-20 md:mt-15 items-center"
     >
-      <div className="px-4 sm:px-12 lg:px-36 py-6 ">
+      <div className="px-4 sm:px-12 lg:px-46 py-6 ">
         <div className="relative p-6 sm:p-10">
           <div
             className="
-            absolute inset-0 bg-cover bg-center rounded-xl
+            border border-gray-700/90 rounded-2xl
+            absolute inset-0 bg-cover bg-center opacity-80
             lg:bg-[url('../../assets/images/photos/herolg.jpg')]
             md:bg-[url('../../assets/images/photos/heromd.jpg')]
             sm:bg-[url('../../assets/images/photos/herosm.jpg')]
@@ -51,8 +53,8 @@ function Hero() {
           ></div>
 
           <div className="relative z-10 max-w-lg text-white ">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight ">
-              <span className="text-green-400">Marco Antonio </span>
+            <h1 className="text-2xl sm:text-3xl text-center sm:text-start lg:text-4xl font-bold leading-tight ">
+              <span className="bg-linear-to-r">Marco Antonio </span>
               <span className="block">Evangelista Armenta</span>
             </h1>
             <p className="mt-4 text-lg font-semibold sm:text-base text-center sm:text-start">
@@ -69,7 +71,7 @@ function Hero() {
             >
               <a
                 href="mailto::armentamarcoantonioev@gmail.com"
-                className="hover:underline text-green-400 font-semibold "
+                className="hover:underline bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent font-semibold "
                 aria-label="Contactar a marco"
               >
                 armentamarcoantonioev@gmail.com
@@ -103,22 +105,19 @@ function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Descargar CV de Marco"
-                className="flex items-center justify-center gap-2 bg-green-400 text-black font-semibold px-4 py-2 rounded-xl hover:bg-green-400 transition"
+                className="flex items-center justify-center gap-2 border text-center border-white  bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent  font-semibold px-4 py-2 rounded-xl"
               >
-                <HiOutlineDownload className="text-lg" />
+                <HiOutlineDownload className="text-white" />
                 <span>Descargar CV</span>
               </a>
             </div>
           </div>
         </div>
-        <div className="mt-10 sm:px-12 opacity-90 grid gap-5">
+        <div className="mt-10 opacity-90 grid gap-5">
+          {' '}
           <CarouselLenguages
             items={lenguajes}
             direction={'scrollLenguagesRigth'}
-          />
-          <CarouselLenguages
-            items={lenguajes}
-            direction={'scrollLenguagesLeft'}
           />
         </div>
       </div>

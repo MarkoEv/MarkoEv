@@ -6,8 +6,12 @@ import { proyectos } from '../../data/projects';
 
 function Projects() {
   return (
-    <section aria-labelledby="projects-title" className="bg-[#1c1c1c] py-16">
-      <div className="px-4 sm:px-12 lg:px-36">
+    <section
+      aria-labelledby="projects-title"
+      className="bg-[#1c1c1c] py-16 "
+      id="Proyectos"
+    >
+      <div className="px-4 sm:px-12 lg:px-16">
         <header className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold">
             Mis Proyectos{' '}
@@ -15,13 +19,18 @@ function Projects() {
               Durante mi trayectoria
             </span>
           </h2>
+
           <p className="mt-4 text-gray-400">
             Aplicaciones web enfocadas en rendimiento, experiencia de usuario y
             soluciones reales.
           </p>
         </header>
-        <CarouselProjects proyectos={proyectos} />
-        <div className="mt-14 opacity-90">
+
+        <div className="px-4 sm:px-12 lg:px-36">
+          <CarouselProjects proyectos={proyectos} />
+        </div>
+
+        <div className="px-4 sm:px-12 lg:px-36 mt-16">
           <CarouselSkills items={techs} />
         </div>
       </div>
