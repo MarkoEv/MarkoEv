@@ -1,7 +1,7 @@
 import curp from '../assets/images/projects/curp.jpg';
 import rickmorty from '../assets/images/projects/rickmorty.jpg';
 import tasksmanager from '../assets/images/projects/tasksmanager.jpg';
-import snapventas from '../assets/images/projects/snapventas.svg';
+import snapventas from '../assets/images/projects/snapventas.jpg';
 import slavdigital from '../assets/images/projects/slavdigital.jpg';
 import dfa from '../assets/images/projects/fda.jpg';
 
