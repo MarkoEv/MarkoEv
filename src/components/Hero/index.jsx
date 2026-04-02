@@ -55,9 +55,10 @@ function Hero() {
               Ingeniero en Sistemas y Desarrollador Web
             </p>
             <p className="text-sm sm:text-base text-gray-300 text-center sm:text-start">
-              Especializado en desarrollo web, con amplio conocimiento en
-              tecnologías modernas. Interesado en la docencia para ayudar a
-              quienes buscan cambiar el mundo a través de la tecnología.
+              Tengo 26 años de edad, actualmente estoy especializado en la
+              programación web, tengo amplio conocimiento en tecnologías
+              modernas. Estoy interesado en la docencia para ayudar a quienes
+              buscan cambiar el mundo a través de la tecnología.
             </p>
             <p
               className="mt-2 text-sm text-center sm:text-start"
