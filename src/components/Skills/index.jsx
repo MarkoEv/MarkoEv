@@ -5,22 +5,23 @@ function Skills() {
   return (
     <section
       aria-labelledby="Skills-title"
-      className="bg-black py-15 sm:py-26 lg:py-20"
+      className="bg-black py-15 "
       id="Habilidades"
     >
-      <div className="text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col gap-12 sm:gap-7">
-        {' '}
-        <header className="space-y-4 text-center">
-          <h2 className="text-4xl font-bold flex justify-center gap-2">
-            Mis
-            <span className="bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-              Habilidades
-            </span>
-          </h2>
-          <p className="text-lg font-semibold text-white">Skills Fullstack</p>
-        </header>
-        <div className="">
-          <div className="flex justify-center ">
+      <div className="px-4 sm:px-12 lg:px-46 ">
+        <div className="grid items-center ">
+          <div className="flex flex-col gap-5 text-center md:text-left">
+            <header className="space-y-4 text-center">
+              <h2 className="text-4xl font-bold flex justify-center gap-2">
+                Mis
+                <span className="bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                  Habilidades
+                </span>
+              </h2>
+              <p className="text-lg font-semibold text-white">
+                Skills Fullstack
+              </p>
+            </header>
             <GridSkills />
           </div>
         </div>

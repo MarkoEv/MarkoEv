@@ -10,7 +10,7 @@ function Blogs() {
       id="Blog"
     >
       <div className="px-4 sm:px-12 lg:px-46">
-        <header className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="max-w-xl flex flex-col gap-5 text-center md:text-left">
             <img
               src={comillas}
@@ -51,7 +51,7 @@ function Blogs() {
           <div className="w-full  rounded-2xl">
             <CarouselBlogs />
           </div>
-        </header>
+        </div>
       </div>
     </section>
   );

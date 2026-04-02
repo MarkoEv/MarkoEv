@@ -17,7 +17,7 @@ function GridSkills() {
             flex items-center gap-4 
             rounded-2xl 
             bg-white/5 
-            border border-white/10
+            border border-white/30
             p-4
             transition-all duration-300
             hover:bg-white/10 
