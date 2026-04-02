@@ -25,12 +25,6 @@ function Hero() {
       icon: <SiPlatzi />,
       href: 'https://platzi.com/p/MarkoEv',
     },
-    {
-      id: 4,
-      name: 'Facebook',
-      icon: <FaFacebook />,
-      href: 'https://www.facebook.com/markoevang/',
-    },
   ];
 
   return (
