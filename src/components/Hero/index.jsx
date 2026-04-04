@@ -21,7 +21,7 @@ function Hero() {
     },
     {
       id: 3,
-      name: 'Platzi',
+      name: 'Certificados',
       icon: <SiPlatzi />,
       href: 'https://platzi.com/p/MarkoEv',
     },
