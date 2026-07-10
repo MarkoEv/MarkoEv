@@ -4,6 +4,7 @@ import tasksmanager from '../assets/images/projects/tasksmanager.jpg';
 import snapventas from '../assets/images/projects/snapventas.jpg';
 import slavdigital from '../assets/images/projects/slavdigital.jpg';
 import dfa from '../assets/images/projects/fda.jpg';
+import frappeliz from '../assets/images/projects/frappeliz.jpg';
 
 export const proyectos = [
   {
@@ -19,6 +20,17 @@ export const proyectos = [
   },
   {
     id: 2,
+    nombre: 'Frappeliz',
+    descripcion:
+      'Aplicación web para mostrar los productos de un restaurante y realizar pedidos.',
+    stack: ['React', 'Tailwind', 'Vite'],
+    imagen: frappeliz,
+    github: '',
+    category: 'Comercial',
+    live: 'https://frappeliz.com',
+  },
+  {
+    id: 3,
     nombre: 'Slav',
     descripcion:
       'Rastreador de vehiculos, rutas y administrar los vehiculos en tiempo real',
@@ -29,7 +41,7 @@ export const proyectos = [
     live: 'https://slav.digital',
   },
   {
-    id: 3,
+    id: 4,
     nombre: 'Rick & Morty Explorer',
     descripcion:
       'Explorador de personajes y episodios, para la comunidad de fans de la serie.',
@@ -40,7 +52,7 @@ export const proyectos = [
     live: 'https://rickmorty-explorer-iota.vercel.app',
   },
   {
-    id: 4,
+    id: 5,
     nombre: 'CURP Generator',
     descripcion: 'Generador de CURP mexicano con validación en tiempo real.',
     stack: ['Vite', 'Tailwind', 'Swiper.js'],
@@ -50,7 +62,7 @@ export const proyectos = [
     live: 'https://generador-de-curp.vercel.app',
   },
   {
-    id: 5,
+    id: 6,
     nombre: 'Tasks Manager',
     descripcion:
       'Un Gestor de tareas gratuito con persistencia en localStorage.',
@@ -62,7 +74,7 @@ export const proyectos = [
   },
 
   {
-    id: 6,
+    id: 7,
     nombre: 'Simulador de AFD',
     descripcion:
       'Simulador de Autómatas Finitos Deterministas con visualización de grafos.',
